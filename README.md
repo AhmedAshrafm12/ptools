@@ -7,36 +7,79 @@ Brief project description and purpose.
 - [Project Title](#project-title)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
-  - [Features](#features)
-  - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
   - [Usage](#usage)
-  - [Configuration](#configuration)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
-Explain what your project does and why it exists. Provide context and background information.
+ptools App for multi services like printing , photography and editing with delivery option
 
-## Features
-
-List the key features of your project.
-
-## Getting Started
-
-Guide users through setting up your project locally. Provide clear steps to get the project up and running.
 
 ### Prerequisites
 
-List any software, tools, or dependencies users need before they can use your project.
+php , laravel framework , composer , npm 
+
 
 ### Installation
 
-Provide step-by-step instructions on how to install and configure your project.
+Step 1: navigate to project
 
-```bash
-# Example installation command
+cd ptools
+
+Create a copy of the .env.example file and name it .env:
+
+bash
+
+cp .env.example .env
+
+Open the .env file and set the database connection details, application key, and any other configuration you need.
+
+Generate an application key:
+
+bash
+
+php artisan key:generate
+
+Step 3: Install Dependencies
+
+Install PHP dependencies using Composer:
+
+bash
+
+composer install
+
+Install JavaScript dependencies using NPM:
+
+bash
+
 npm install
+
+Step 4: Run Migrations
+
+Run database migrations to create tables:
+
+bash
+
+php artisan migrate
+
+Step 5: Start the Development Server
+
+Run the Laravel development server:
+
+bash
+
+php artisan serve
+
+
+Step 6: Access Your Laravel Application
+
+Open your web browser and go to http://localhost:8000 to see your Laravel application.
+
+Usage
+
+download the project , install Dependencies and start the development server
+
+
+
+
